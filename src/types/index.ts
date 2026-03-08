@@ -1,4 +1,5 @@
 export interface Project {
+  [key: string]: unknown;
   id: string;
   title: string;
   description: string;
@@ -13,6 +14,7 @@ export interface Project {
 }
 
 export interface Skill {
+  [key: string]: unknown;
   id: string;
   name: string;
   level: number; // 0-100
@@ -21,6 +23,7 @@ export interface Skill {
 }
 
 export interface Experience {
+  [key: string]: unknown;
   id: string;
   company: string;
   role: string;
@@ -34,6 +37,7 @@ export interface Experience {
 }
 
 export interface Certification {
+  [key: string]: unknown;
   id: string;
   name: string;
   issuer: string;
@@ -45,6 +49,7 @@ export interface Certification {
 }
 
 export interface Achievement {
+  [key: string]: unknown;
   id: string;
   title: string;
   description: string;
@@ -55,6 +60,7 @@ export interface Achievement {
 }
 
 export interface Testimonial {
+  [key: string]: unknown;
   id: string;
   name: string;
   role: string;
@@ -66,6 +72,7 @@ export interface Testimonial {
 }
 
 export interface AnalyticsEvent {
+  [key: string]: unknown;
   id: string;
   type:
     | "page_view"
@@ -81,6 +88,7 @@ export interface AnalyticsEvent {
 }
 
 export interface AnalyticsSummary {
+  [key: string]: unknown;
   totalVisits: number;
   uniqueVisitors: number;
   projectClicks: number;
@@ -95,6 +103,7 @@ export interface AnalyticsSummary {
 }
 
 export interface PortfolioData {
+  [key: string]: unknown;
   projects: Project[];
   skills: Skill[];
   experience: Experience[];
