@@ -1,92 +1,77 @@
 import { SignJWT, jwtVerify } from "jose";
-
-// Crash loudly at startup if JWT_SECRET is missing or weak
-const rawSecret = process.env.JWT_SECRET;
-if (
-  !rawSecret ||
-  rawSecret.length < 32 ||
-  rawSecret === "fallback_secret_please_change"
-) {
-  if (process.env.NODE_ENV === "production") {
-    throw new Error(
-      "FATAL: JWT_SECRET is missing or too weak. Set a 64-char random string in env.",
-    );
-  } else {
-    console.warn(
-      "[auth] WARNING: JWT_SECRET not set or weak. DO NOT deploy this to production.",
-    );
-  }
-}
+import fs from "fs";
+import path from "path";
 
 const secret = new TextEncoder().encode(
-  rawSecret || "dev_only_secret_do_not_use_in_prod",
+  process.env.JWT_SECRET || "fallback_secret_please_change",
 );
 
-// ── Global in-memory OTP store ───────────────────────────────
-// Declared on globalThis so it survives Next.js hot-reloads in dev
-// and persists across requests on the same Railway instance in prod
+// ── File-persisted OTP store (survives hot reloads) ─────────
+const OTP_FILE = path.join(process.cwd(), "data", "otp_store.json");
 
-type OTPEntry = { code: string; expiresAt: number; attempts: number };
+type OTPStore = Record<string, { code: string; expiresAt: number }>;
 
-declare global {
-  // eslint-disable-next-line no-var
-  var __otpStore: Map<string, OTPEntry> | undefined;
+function readOTPStore(): OTPStore {
+  try {
+    if (fs.existsSync(OTP_FILE)) {
+      return JSON.parse(fs.readFileSync(OTP_FILE, "utf-8"));
+    }
+  } catch {
+    /* ignore */
+  }
+  return {};
 }
 
-const otpStore: Map<string, OTPEntry> =
-  globalThis.__otpStore ?? (globalThis.__otpStore = new Map());
-
-// Purge expired entries to prevent unbounded memory growth
-function purgeExpired() {
-  const now = Date.now();
-  for (const [key, entry] of otpStore) {
-    if (now > entry.expiresAt) otpStore.delete(key);
+function writeOTPStore(store: OTPStore) {
+  try {
+    fs.mkdirSync(path.dirname(OTP_FILE), { recursive: true });
+    fs.writeFileSync(OTP_FILE, JSON.stringify(store, null, 2));
+  } catch {
+    /* ignore */
   }
 }
 
 export function generateOTP(): string {
-  const array = new Uint32Array(1);
-  crypto.getRandomValues(array);
-  return String(100000 + (array[0] % 900000));
+  return Math.floor(100000 + Math.random() * 900000).toString();
 }
 
 export function storeOTP(email: string, code: string) {
-  purgeExpired();
-  const minutes = Math.min(
-    parseInt(process.env.OTP_EXPIRY_MINUTES || "10"),
-    30,
-  );
-  otpStore.set(email.toLowerCase().trim(), {
+  const minutes = parseInt(process.env.OTP_EXPIRY_MINUTES || "10");
+  const store = readOTPStore();
+  store[email.toLowerCase().trim()] = {
     code,
     expiresAt: Date.now() + minutes * 60 * 1000,
-    attempts: 0,
-  });
+  };
+  writeOTPStore(store);
+  console.log(`[OTP] Stored for ${email}, expires in ${minutes}min`);
 }
 
 export function verifyOTP(email: string, code: string): boolean {
+  const store = readOTPStore();
   const key = email.toLowerCase().trim();
-  const entry = otpStore.get(key);
+  const entry = store[key];
 
-  if (!entry) return false;
+  console.log(
+    `[OTP] Verifying for ${email} — stored: ${entry?.code}, received: ${code}`,
+  );
 
+  if (!entry) {
+    console.log("[OTP] No entry found for this email");
+    return false;
+  }
   if (Date.now() > entry.expiresAt) {
-    otpStore.delete(key);
+    console.log("[OTP] Expired");
+    delete store[key];
+    writeOTPStore(store);
     return false;
   }
-
-  // Max 5 wrong attempts before locking the OTP
-  if (entry.attempts >= 5) {
-    otpStore.delete(key);
-    return false;
-  }
-
   if (entry.code !== code.trim()) {
-    entry.attempts++;
+    console.log("[OTP] Code mismatch");
     return false;
   }
-
-  // Valid — delete after single use
-  otpStore.delete(key);
+  // Valid — delete after use
+  delete store[key];
+  writeOTPStore(store);
   return true;
 }
 
@@ -94,7 +79,7 @@ export async function signToken(email: string): Promise<string> {
   return new SignJWT({ email, role: "admin" })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime("8h")
+    .setExpirationTime("7d")
     .sign(secret);
 }
 
@@ -112,9 +97,8 @@ export async function verifyToken(
 export function isAdminEmail(email: string): boolean {
   const adminEmail = (process.env.ADMIN_EMAIL || "").toLowerCase().trim();
   const inputEmail = (email || "").toLowerCase().trim();
-  return (
-    inputEmail === adminEmail &&
-    adminEmail !== "" &&
-    adminEmail !== "hauntedwolf2000@gmail.com"
+  console.log(
+    `[isAdminEmail] comparing "${inputEmail}" === "${adminEmail}" → ${inputEmail === adminEmail}`,
   );
+  return inputEmail === adminEmail;
 }

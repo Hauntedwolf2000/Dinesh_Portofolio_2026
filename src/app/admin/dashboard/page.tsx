@@ -1,20 +1,21 @@
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
-import { verifyToken } from '@/lib/auth'
-import AdminDashboardClient from './AdminDashboardClient'
-import { getPortfolioData, getAnalyticsSummary } from '@/lib/dataStore'
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+import { verifyToken } from "@/lib/auth";
+import AdminDashboardClient from "./AdminDashboardClient";
+import { getPortfolioData, getAnalyticsSummary } from "@/lib/dataStore";
 
 export default async function AdminDashboard() {
-  const cookieStore = cookies()
-  const token = cookieStore.get('admin_token')?.value
+  const cookieStore = await cookies();
 
-  if (!token) redirect('/admin/login')
+  const token = cookieStore.get("admin_token")?.value;
 
-  const payload = await verifyToken(token)
-  if (!payload || payload.role !== 'admin') redirect('/admin/login')
+  if (!token) redirect("/admin/login");
 
-  const portfolioData = getPortfolioData()
-  const analytics     = getAnalyticsSummary()
+  const payload = await verifyToken(token);
+  if (!payload || payload.role !== "admin") redirect("/admin/login");
+
+  const portfolioData = getPortfolioData();
+  const analytics = getAnalyticsSummary();
 
   return (
     <AdminDashboardClient
@@ -22,5 +23,5 @@ export default async function AdminDashboard() {
       analytics={analytics}
       adminEmail={payload.email}
     />
-  )
+  );
 }
