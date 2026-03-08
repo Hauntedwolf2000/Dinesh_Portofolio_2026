@@ -1,0 +1,457 @@
+{
+  "about": {
+    "bioH": "I'm a creative problem solver, energized by learning new skills and highly adaptable. I'm Committed, transparent, and forward-thinking , and organized, all to achieve my career goals with passion.",
+    "bio": "I'm a E-Learning Developer who thrives at the intersection of education and engineering. I specialise in LMS integrations, SCORM/xAPI development, and building AI automation tools that solve real problems.\n I don't limit myself to a role — wherever there's a challenge, I build a solution.",
+    "location": "India",
+    "available": true,
+    "profileImage": "/resources/profile_1772603850098_WhatsApp_Image_2026-03-04_at_11_23_52_AM.jpeg",
+    "whatsapp": "+919353662551"
+  },
+  "projects": [
+    {
+      "id": "proj-2",
+      "title": "Railway Management system",
+      "description": "Developed a full-stack Railway Management System using React, SQL, and Razorpay for seamless, end-to-end seat reservations.",
+      "longDescription": "Architected and developed a comprehensive end-to-end railway reservation platform designed to streamline the entire journey from initial planning to final booking. The system prioritizes a user-centric experience, featuring an intuitive interface for searching schedules, selecting seats, and completing secure financial transactions. On the backend, it leverages a structured data architecture to manage high volumes of real-time inventory, ensuring that seat availability and passenger records remain synchronized and accurate. By bridging a modern, responsive design with a dependable server-side framework, the project successfully automates complex ticketing workflows into a cohesive and reliable digital service.",
+      "tech": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Css Bootstrap",
+        "Razorpay",
+        "sql",
+        "XAMPP",
+        "Figma"
+      ],
+      "category": "Full Stack",
+      "liveUrl": "https://frontend-jade-delta-45.vercel.app/",
+      "githubUrl": "https://github.com/Hauntedwolf2000/RailwaySystem",
+      "image": "/resources/project_1772648765803_Screenshot_2026-03-04_235558.png",
+      "featured": true,
+      "createdAt": "2023"
+    },
+    {
+      "id": "proj-3",
+      "title": "Fury Designs ",
+      "description": "Developed a responsive website for an electronics company client Ensured seamless functionality, user-friendly design, and cross-browser compatibility to meet client requirements.",
+      "longDescription": "Designed and developed a responsive platform for an electronics manufacturer, prioritizing a clean, user-friendly interface and flawless performance across all devices and browsers.  By focusing on intuitive navigation and a robust architectural foundation, the site effectively showcases the client's hardware catalog while ensuring a reliable and professional digital storefront.",
+      "tech": [
+        "Php",
+        "html",
+        "css",
+        "javascript"
+      ],
+      "category": "Full Stack",
+      "liveUrl": "https://www.indicelectronics.com/",
+      "githubUrl": "",
+      "image": "/resources/project_1772649211048_Screenshot_2026-03-05_000322.png",
+      "featured": false,
+      "createdAt": "2023-10"
+    },
+    {
+      "title": "Urban Riders",
+      "description": "Developed an e-commerce website for a bikers' company client (Urban Riders)\nIntegrated Razor-pay for secure and efficient payment processing.",
+      "longDescription": "Designed and developed a comprehensive e-commerce platform for a motorcycle lifestyle brand, focusing on a high-performance shopping experience for the biking community. The solution features a responsive, modern interface that streamlines product discovery and navigation across all devices. By integrating a secure, real-time payment gateway and a robust cloud-based data architecture, the platform ensures reliable transaction processing and seamless order management, providing a professional and efficient digital storefront for the client's gear and accessories.",
+      "tech": [
+        "React.js",
+        "Tailwind.css",
+        "Express.js",
+        "Node.js",
+        "Firebase",
+        "Javascript",
+        "RazorPay "
+      ],
+      "category": "Full Stack",
+      "liveUrl": "https://urbanbikers.netlify.app/",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Urban-rider.git",
+      "image": "/resources/project_1772649477808_Screenshot_2026-03-05_000751.png",
+      "videoUrl": "",
+      "featured": false,
+      "createdAt": "2024-02",
+      "id": "e03d0a54-c389-4fa0-a6ee-6b328aaf6a5c"
+    },
+    {
+      "title": "Paxal Industry limited",
+      "description": "Collaboratively constructed the website’s building blocks and pages with HTML and bootstrap framework\nCSS, and Material UI. And also integrated and back-end database for info about the products.",
+      "longDescription": "Designed and developed the core architectural components and user-facing pages of a product-centric web platform, utilizing a mix of modern styling frameworks to ensure a consistent and responsive interface. The front-end experience was built with a focus on modularity, allowing for a seamless transition between product discovery and detailed information views. To support this, a structured back-end database was integrated to manage and serve real-time product data, ensuring that technical specifications and inventory details remain accurate and easily accessible to the user.",
+      "tech": [
+        "html",
+        "Css",
+        "javascript"
+      ],
+      "category": "Full Stack",
+      "liveUrl": "https://paxaldinesh.netlify.app/",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Paxal_Industries.git",
+      "image": "/resources/project_1772649856150_Screenshot_2026-03-05_001409.png",
+      "videoUrl": "",
+      "featured": false,
+      "createdAt": "2022",
+      "id": "8a386010-08ff-4f46-a7d1-a9737abecbd7"
+    },
+    {
+      "title": "Data Dashboards",
+      "description": "Created interactive dashboards using Python (Pandas, Plotly, Streamlit) to visualize business metrics and trends. Performed EDA to uncover insights and built dynamic dashboards with user filters for trend analysis. Delivered data-driven decision-making tools through visually compelling and interactive Streamlit apps.",
+      "longDescription": "",
+      "tech": [
+        "Python",
+        "streamlit.app"
+      ],
+      "category": "AI/ML",
+      "liveUrl": "https://dinesh-dashboard.streamlit.app/",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Data_analytics.git",
+      "image": "/resources/project_1772650231635_Screenshot_2026-03-05_001945.png",
+      "videoUrl": "",
+      "featured": false,
+      "createdAt": "2023",
+      "id": "936f603b-8a7e-4b36-8676-ac6f84db4051"
+    },
+    {
+      "title": "MRI-based brain tumor classification using neural networks",
+      "description": "Emphasized on transfer learning and functional CNN's. Developed a robust model that could identify with comparing high\naccuracy distinguishing glioma, meningioma, pituitary tumors, and Normal tissues.",
+      "longDescription": "",
+      "tech": [
+        "CNN",
+        "Tensorflow",
+        "python",
+        "kaggle dataset"
+      ],
+      "category": "AI/ML",
+      "liveUrl": "https://www.kaggle.com/code/dineshkumarsm/brain-tumor-segmentation-with-dl",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Brain_Tumor_Classification.git",
+      "image": "/resources/project_1772650845439_Screenshot_2026-03-05_003037.png",
+      "videoUrl": "",
+      "featured": false,
+      "createdAt": "2024",
+      "id": "28ba8189-d076-4dfb-abfd-a2e69e663d0e"
+    },
+    {
+      "title": "Whatsapp bot supportive system",
+      "description": "D-Forge is a GUI-based PowerShell automation tool designed to streamline the preparation, validation, and packaging of SCORM (Sharable Content Object Reference Model) e-learning content. The tool automates repetitive tasks involved in making Articulate Storyline exports LMS-ready, with built-in compliance checking and quality assurance features.",
+      "longDescription": "",
+      "tech": [
+        "bat scripting",
+        "Powershell scripting",
+        "Cluade"
+      ],
+      "category": "AI/ML",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Scorm_Package_Automation.git",
+      "image": "https://raw.githubusercontent.com/Hauntedwolf2000/Scorm_Package_Automation/refs/heads/main/shortcut_Logo.ico",
+      "videoUrl": "/resources/project-video_1772651244554_Recording_2026-03-04_164338.mp4",
+      "featured": false,
+      "createdAt": "2025",
+      "id": "3316e0da-70aa-4442-b216-af6996cc9f03"
+    },
+    {
+      "title": "Whatsapp bot support system",
+      "description": "This script implements an enhanced WhatsApp support bot using the Baileys library to automate ticket creation and management through a structured conversational flow. It integrates with Google Sheets via webhooks to log issue details, track real-time status, and handle media attachments for student support.",
+      "longDescription": "",
+      "tech": [
+        "Baileys",
+        "Whatsapp web"
+      ],
+      "category": "Mobile",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Hauntedwolf2000/Whatsapp_Bot.git",
+      "image": "/resources/project_1772651864617_Screenshot_2026-03-05_004737.png",
+      "videoUrl": "/resources/project-video_1772651840936_Video_20260305_004017_126.mp4",
+      "featured": false,
+      "createdAt": "2025",
+      "id": "4bc6d4a0-0891-45e1-97f4-a7ebb04a7153"
+    },
+    {
+      "title": "Personal Portfolio",
+      "description": "A responsive portfolio built with React for a dynamic user interface and Node.js/Express for a solid backend foundation. It features a seamless contact system integrated with EmailJS, allowing for direct, real-time communication without the need for a complex mail server setup.",
+      "longDescription": "",
+      "tech": [],
+      "category": "Full Stack",
+      "liveUrl": "https://dinesh2000.netlify.app/",
+      "githubUrl": "https://github.com/Hauntedwolf2000/react-portfolio-v2-main.git",
+      "image": "/resources/project_1772980684493_Screenshot_2026-03-08_200755.png",
+      "videoUrl": "",
+      "featured": true,
+      "createdAt": "2025",
+      "id": "36b24fd4-8dc2-4385-9555-f66fc458c465"
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk-1",
+      "name": "React / Next.js",
+      "level": 70,
+      "category": "Frontend",
+      "icon": "react"
+    },
+    {
+      "id": "sk-2",
+      "name": "TypeScript",
+      "level": 50,
+      "category": "Frontend",
+      "icon": "typescript"
+    },
+    {
+      "id": "sk-3",
+      "name": "Tailwind CSS",
+      "level": 80,
+      "category": "Frontend",
+      "icon": "tailwind"
+    },
+    {
+      "id": "sk-4",
+      "name": "Node.js",
+      "level": 60,
+      "category": "Backend",
+      "icon": "nodejs"
+    },
+    {
+      "id": "sk-5",
+      "name": "Python",
+      "level": 40,
+      "category": "Backend",
+      "icon": "python"
+    },
+    {
+      "id": "sk-6",
+      "name": "MongoDB",
+      "level": 40,
+      "category": "Database",
+      "icon": "mongodb"
+    },
+    {
+      "id": "sk-10",
+      "name": "Git / GitHub",
+      "level": 75,
+      "category": "Tools",
+      "icon": "git"
+    },
+    {
+      "name": "Articulate storyline",
+      "level": 90,
+      "category": "Tools",
+      "id": "4f35fafc-e5cc-4ba7-900c-0bfd39cb446e"
+    },
+    {
+      "name": "Captivate",
+      "level": 85,
+      "category": "Tools",
+      "id": "c1007de5-1257-499a-b757-71355c0da51e"
+    },
+    {
+      "name": "Kute.js",
+      "level": 80,
+      "category": "Other",
+      "id": "89aa514e-95e5-4127-93fc-6531cf576e01"
+    },
+    {
+      "name": "GSAP.js",
+      "level": 75,
+      "category": "Other",
+      "id": "874a7b29-f692-4fb1-8434-9c6b10c0e8e9"
+    },
+    {
+      "name": "Java",
+      "level": 75,
+      "category": "Other",
+      "id": "d88142e2-a916-442e-a421-81cdcb354ed2"
+    },
+    {
+      "name": "javascript",
+      "level": 75,
+      "category": "Frontend",
+      "id": "317968e6-e001-4975-a9f5-c2fc1fd5ce9d"
+    },
+    {
+      "name": "vs code",
+      "level": 80,
+      "category": "Tools",
+      "id": "2c5a4732-68f1-4771-ab12-cf10598c5052"
+    },
+    {
+      "name": "cursor",
+      "level": 75,
+      "category": "Tools",
+      "id": "828af58a-99bf-43b5-b1a4-6e04cbb84276"
+    },
+    {
+      "name": "Node.js / Express.js",
+      "level": 50,
+      "category": "Backend",
+      "id": "f3bca927-c0ca-4b60-acc4-ff110e34060c"
+    },
+    {
+      "name": "SQL",
+      "level": 50,
+      "category": "Database",
+      "id": "861f5176-d226-4e14-b269-30f6c587e255"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Kidvento Education and Research Private Limited",
+      "role": "E-Learning Developer",
+      "description": "Developed Interactive Learning Modules (ILMs) using Articulate 360, Adobe Captivate, and JavaScript.\nImplemented animations and functional SCORM activities using GSAP,KUTE.js for engaging e-learning experiences.",
+      "startDate": "2024-08",
+      "endDate": null,
+      "current": true,
+      "location": "Mysuru",
+      "logo": "https://media.licdn.com/dms/image/v2/C560BAQFaSMAJJjb0Yg/company-logo_200_200/company-logo_200_200/0/1638773494089?e=2147483647&v=beta&t=4PMkhMSn96Jl1hbDf_ONmLraZgfYfnX2Z5AmbkQW670",
+      "achievements": [
+        "Built automation reducing the time for 40%",
+        "Developed more than 50+ courses on scorm package ",
+        "Understanding the capabilities of a scorm Package and modifing the codes as per the company requirement",
+        "Leaveraging the capabilities of XAPI , Data retrieved by the scorm package",
+        "Build Scalable APi to bridge data between the scorm package and LMS"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Urban Riders",
+      "role": "Web Developer",
+      "description": "Built scalable web applications  and contributed to product strategy.",
+      "startDate": "2024-02",
+      "endDate": "2024-07",
+      "current": false,
+      "location": "Remote",
+      "logo": "https://media.licdn.com/dms/image/v2/C510BAQEQyWN3ZfQEkA/company-logo_200_200/company-logo_200_200/0/1630630869783/geturbanrider_logo?e=2147483647&v=beta&t=iEa2nC0F4PwSurF3miPfShdnoblkMEf2BGjXvSHNxZM",
+      "achievements": [
+        "Developed an e-commerce website for a bikers' company client",
+        "Integrated Razor-pay for secure and efficient payment processing.",
+        "Robust api and using the firebase as database and login integrations"
+      ]
+    },
+    {
+      "company": "Fury Designs",
+      "role": "Website Developer (Internship)",
+      "description": "Developed a responsive website for an electronics company client (Indic Electronics) using PHP, HTML, CSS, and JavaScript. Ensured seamless functionality, user-friendly design, and cross-browser compatibility to meet client requirements.",
+      "startDate": "2023-10",
+      "endDate": "2024-1",
+      "current": false,
+      "location": "Remote",
+      "logo": "/resources/logo_1772605905853_Screenshot_2026-03-04_120127.png",
+      "achievements": [],
+      "id": "6b8de93a-886d-4625-84d0-7ee7135e8f13"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "name": "AI Agents Intensive Course with Google",
+      "issuer": "Google",
+      "date": "2025-12",
+      "credentialUrl": "https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/multi-agent-orchestration-in-customer-support",
+      "certificateUrl": "/resources/certificate_1772644916416_Agentic_AI.jpg",
+      "image": "data:image/png;base64,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",
+      "badgeColor": "#FF9900"
+    },
+    {
+      "id": "cert-2",
+      "name": "Full Stack Web Development",
+      "issuer": "Udemy",
+      "date": "2023-10",
+      "credentialUrl": "https://www.udemy.com/certificate/UC-cb9a2b75-4a90-4594-bf83-e32c0a06ee24/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
+      "certificateUrl": "https://udemy-certificate.s3.amazonaws.com/image/UC-cb9a2b75-4a90-4594-bf83-e32c0a06ee24.jpg?v=1698698446000",
+      "image": "data:image/png;base64,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",
+      "badgeColor": "#4285F4"
+    },
+    {
+      "id": "cert-3",
+      "name": "Object-Oriented Programming with Java",
+      "issuer": "Coursera",
+      "date": "2023-06",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/7BGI59WRD9CG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+      "certificateUrl": "/resources/certificate_1772645278831_Screenshot_2026-03-04_225751.png",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAgVBMVEUAVtL///8AUdEAStAAU9EAOc0ATNAAT9EASNAARs/m6vjw9PsAP869yu8AQc45ataXr+eNoeSPqOZYgNvL1fJIbNba4vb3+v5VedqktulYfdvR2/Rzk+B+nOIkW9OEoOM1YNRyjt8AMswzZtZGdNllht2CmOG1wu2qvOtmgNvD0PHVtb72AAAEZElEQVR4nO2W15rDKAxGbSCUuKa4Oy7jtPH7P+CCcBxnMvHst7ercxMikPgRCOM4CIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyAQTUlKyMBAupWBzrxDkpck04AU2/uasFs7TUDpPxM1YQghz1uBOUsfx6dzQyUCdszbUie4xgaLD4XC2MQfdzEWTaByuvaQjSNLHRVt2s3NTnoq4T4SAv4+hrXGXw0VPlDPR5XmerGlSl6MLpFdl1DP/WllD1Yf6v4xNE9YFTW9zcLPMG26ZbvJknJx3k/M+tYbxrMyCvCxzuzhzU+UQEXs2brQ3A8hHSYzf3ZmKEYc5x6ch0EkGJUeIQE2wrRalpZm575v8OdZMQrrqabhyh0RGhtF9U2TwHj3ZCLE/iqKFu6DqmKqWhhv9IMpOK9LF2EA54YtzL1n0EHKS3dZ94bMoerXJDwII5/WhTdz2WNkYMX0XVUKPF7TdBVZyOdwz/ZMLDiv0xnZ/zExCGmFFebd951u96SPwiigJI/bED1XvubdOniHK1fH9JgZf+UFUNoSUw5KSkPt92lPBOuO8TUIp1bfpKRSIykpfcnDyau6H3X1dlI16DWHGcyQZByUHZU6bqk279X8X1epyIz1k9TDQUOli4yfzr/OV5st0bRsQFev4MjBDocDZZr8qCk7UdqpmokdRk+SRW8PGpHH8+lVU9m3uq8FuxXbcCZ844Q12dQwMsIEJiMp1+XRQGP6UC29NlDD673yxnWb4blIpjYbq90x5ubHIfj63YyL8l2NuKKHiBi0qMY3LpAMq/j+Kou1forSquaayZJP+FHUAURGzoiC7IKr4e/smUURrkSbubRK1MSs/LrZPFT9FOeIrv6e27r2NWWJV72b2HWxfRKaNnlebrmYKzvIJtprmbSggsVkEMunZdMZwLNNmVvkiilEuVXPeww2Qm4OeckUN4UZSai/PyNz1R5Bt01uuHnSHQvZj5vuy9ty0pN8ZzKirOrxAApit0N1GiLDPfohSXeFeFGM+THNtPEiqEoSGu6oTDntkypE7M6IafCptmL8vz+0Y2PNw9eFb5o07e/+5N8lySENRHgqwTKJKU6uFXlMWMyVM3WW9ghsojc/RVSdmmws2Z4pRcPZupynwv//MHBtGvKWh0t9CflxalqLUS8+WsfDlqGeczJlyxMV9ZUXU2wdZJItvVKq3wBHR8/+rKDYsRdTUIcPiVvAu/Ll9uuTqhdx1Ue9PFyHuU7K8wj7e6GHSGS9udChvwYPskafePPlIWDzWFOjrm0TZLMpR5aTYq832rDxdnPdHHuPRKUjT4Do8Hm6iace0upf0XNf1RTT6qVc209ikDaq0uvXddLHQrr5V6bhP4LXalHrsYyLBvu+6qx3kuW3bfv3p+fYcZjz0/ZAvvIxBf96Ifg6bDZ3fx2as8k0fewbThvARjojpCWplQRfTVyKlCzOCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMj/l38AgZJM2gNFtFUAAAAASUVORK5CYII=",
+      "badgeColor": "#0866FF"
+    },
+    {
+      "name": "AI for everyone",
+      "issuer": "Udemy",
+      "date": "2020-05",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/R98NU44953FH?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+      "certificateUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~R98NU44953FH/CERTIFICATE_LANDING_PAGE~R98NU44953FH.jpeg",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAgVBMVEUAVtL///8AUdEAStAAU9EAOc0ATNAAT9EASNAARs/m6vjw9PsAP869yu8AQc45ataXr+eNoeSPqOZYgNvL1fJIbNba4vb3+v5VedqktulYfdvR2/Rzk+B+nOIkW9OEoOM1YNRyjt8AMswzZtZGdNllht2CmOG1wu2qvOtmgNvD0PHVtb72AAAEZElEQVR4nO2W15rDKAxGbSCUuKa4Oy7jtPH7P+CCcBxnMvHst7ercxMikPgRCOM4CIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyAQTUlKyMBAupWBzrxDkpck04AU2/uasFs7TUDpPxM1YQghz1uBOUsfx6dzQyUCdszbUie4xgaLD4XC2MQfdzEWTaByuvaQjSNLHRVt2s3NTnoq4T4SAv4+hrXGXw0VPlDPR5XmerGlSl6MLpFdl1DP/WllD1Yf6v4xNE9YFTW9zcLPMG26ZbvJknJx3k/M+tYbxrMyCvCxzuzhzU+UQEXs2brQ3A8hHSYzf3ZmKEYc5x6ch0EkGJUeIQE2wrRalpZm575v8OdZMQrrqabhyh0RGhtF9U2TwHj3ZCLE/iqKFu6DqmKqWhhv9IMpOK9LF2EA54YtzL1n0EHKS3dZ94bMoerXJDwII5/WhTdz2WNkYMX0XVUKPF7TdBVZyOdwz/ZMLDiv0xnZ/zExCGmFFebd951u96SPwiigJI/bED1XvubdOniHK1fH9JgZf+UFUNoSUw5KSkPt92lPBOuO8TUIp1bfpKRSIykpfcnDyau6H3X1dlI16DWHGcyQZByUHZU6bqk279X8X1epyIz1k9TDQUOli4yfzr/OV5st0bRsQFev4MjBDocDZZr8qCk7UdqpmokdRk+SRW8PGpHH8+lVU9m3uq8FuxXbcCZ844Q12dQwMsIEJiMp1+XRQGP6UC29NlDD673yxnWb4blIpjYbq90x5ubHIfj63YyL8l2NuKKHiBi0qMY3LpAMq/j+Kou1forSquaayZJP+FHUAURGzoiC7IKr4e/smUURrkSbubRK1MSs/LrZPFT9FOeIrv6e27r2NWWJV72b2HWxfRKaNnlebrmYKzvIJtprmbSggsVkEMunZdMZwLNNmVvkiilEuVXPeww2Qm4OeckUN4UZSai/PyNz1R5Bt01uuHnSHQvZj5vuy9ty0pN8ZzKirOrxAApit0N1GiLDPfohSXeFeFGM+THNtPEiqEoSGu6oTDntkypE7M6IafCptmL8vz+0Y2PNw9eFb5o07e/+5N8lySENRHgqwTKJKU6uFXlMWMyVM3WW9ghsojc/RVSdmmws2Z4pRcPZupynwv//MHBtGvKWh0t9CflxalqLUS8+WsfDlqGeczJlyxMV9ZUXU2wdZJItvVKq3wBHR8/+rKDYsRdTUIcPiVvAu/Ll9uuTqhdx1Ue9PFyHuU7K8wj7e6GHSGS9udChvwYPskafePPlIWDzWFOjrm0TZLMpR5aTYq832rDxdnPdHHuPRKUjT4Do8Hm6iace0upf0XNf1RTT6qVc209ikDaq0uvXddLHQrr5V6bhP4LXalHrsYyLBvu+6qx3kuW3bfv3p+fYcZjz0/ZAvvIxBf96Ifg6bDZ3fx2as8k0fewbThvARjojpCWplQRfTVyKlCzOCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMj/l38AgZJM2gNFtFUAAAAASUVORK5CYII=",
+      "badgeColor": "#7c3aed",
+      "id": "002ac356-e509-448f-afe2-b52709c0a1f7"
+    },
+    {
+      "name": "Python crash Course",
+      "issuer": "Coursera/gogogle",
+      "date": "2020-06",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/FP79CPB5S8R9?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
+      "certificateUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FP79CPB5S8R9/CERTIFICATE_LANDING_PAGE~FP79CPB5S8R9.jpeg",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAgVBMVEUAVtL///8AUdEAStAAU9EAOc0ATNAAT9EASNAARs/m6vjw9PsAP869yu8AQc45ataXr+eNoeSPqOZYgNvL1fJIbNba4vb3+v5VedqktulYfdvR2/Rzk+B+nOIkW9OEoOM1YNRyjt8AMswzZtZGdNllht2CmOG1wu2qvOtmgNvD0PHVtb72AAAEZElEQVR4nO2W15rDKAxGbSCUuKa4Oy7jtPH7P+CCcBxnMvHst7ercxMikPgRCOM4CIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyAQTUlKyMBAupWBzrxDkpck04AU2/uasFs7TUDpPxM1YQghz1uBOUsfx6dzQyUCdszbUie4xgaLD4XC2MQfdzEWTaByuvaQjSNLHRVt2s3NTnoq4T4SAv4+hrXGXw0VPlDPR5XmerGlSl6MLpFdl1DP/WllD1Yf6v4xNE9YFTW9zcLPMG26ZbvJknJx3k/M+tYbxrMyCvCxzuzhzU+UQEXs2brQ3A8hHSYzf3ZmKEYc5x6ch0EkGJUeIQE2wrRalpZm575v8OdZMQrrqabhyh0RGhtF9U2TwHj3ZCLE/iqKFu6DqmKqWhhv9IMpOK9LF2EA54YtzL1n0EHKS3dZ94bMoerXJDwII5/WhTdz2WNkYMX0XVUKPF7TdBVZyOdwz/ZMLDiv0xnZ/zExCGmFFebd951u96SPwiigJI/bED1XvubdOniHK1fH9JgZf+UFUNoSUw5KSkPt92lPBOuO8TUIp1bfpKRSIykpfcnDyau6H3X1dlI16DWHGcyQZByUHZU6bqk279X8X1epyIz1k9TDQUOli4yfzr/OV5st0bRsQFev4MjBDocDZZr8qCk7UdqpmokdRk+SRW8PGpHH8+lVU9m3uq8FuxXbcCZ844Q12dQwMsIEJiMp1+XRQGP6UC29NlDD673yxnWb4blIpjYbq90x5ubHIfj63YyL8l2NuKKHiBi0qMY3LpAMq/j+Kou1forSquaayZJP+FHUAURGzoiC7IKr4e/smUURrkSbubRK1MSs/LrZPFT9FOeIrv6e27r2NWWJV72b2HWxfRKaNnlebrmYKzvIJtprmbSggsVkEMunZdMZwLNNmVvkiilEuVXPeww2Qm4OeckUN4UZSai/PyNz1R5Bt01uuHnSHQvZj5vuy9ty0pN8ZzKirOrxAApit0N1GiLDPfohSXeFeFGM+THNtPEiqEoSGu6oTDntkypE7M6IafCptmL8vz+0Y2PNw9eFb5o07e/+5N8lySENRHgqwTKJKU6uFXlMWMyVM3WW9ghsojc/RVSdmmws2Z4pRcPZupynwv//MHBtGvKWh0t9CflxalqLUS8+WsfDlqGeczJlyxMV9ZUXU2wdZJItvVKq3wBHR8/+rKDYsRdTUIcPiVvAu/Ll9uuTqhdx1Ue9PFyHuU7K8wj7e6GHSGS9udChvwYPskafePPlIWDzWFOjrm0TZLMpR5aTYq832rDxdnPdHHuPRKUjT4Do8Hm6iace0upf0XNf1RTT6qVc209ikDaq0uvXddLHQrr5V6bhP4LXalHrsYyLBvu+6qx3kuW3bfv3p+fYcZjz0/ZAvvIxBf96Ifg6bDZ3fx2as8k0fewbThvARjojpCWplQRfTVyKlCzOCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMj/l38AgZJM2gNFtFUAAAAASUVORK5CYII=",
+      "badgeColor": "#7c3aed",
+      "id": "d77e2446-0f48-4451-9c88-ef66c84b3684"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "Certification of Appreciation",
+      "description": "In recognition of the exceptional contributions, including the development of an Complex drag-and-drop Scorm activity  that added visual appeal and enhanced the learning experience creating a custom code solution to effectively bridge Storyline and the LMS for seamless data mapping",
+      "date": "2025-04",
+      "icon": "trophy",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772639716564_April2025.jpg"
+    },
+    {
+      "title": "EXTRA MILE AWARD",
+      "description": "In recognition of exceptional efforts beyond defined responsibilities, reflecting dedication to Company's mission and growth.",
+      "date": "2025-07",
+      "icon": "star",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772639845012_July2025.jpg",
+      "id": "9ca8fb36-0129-40cb-8678-2b2968ee9cda"
+    },
+    {
+      "title": "Certification of Appreciation",
+      "description": "In appreciation of your innovative contributions, collaborative spirit, and commitment to excellence. Proactive efforts and dedication have played a key role in enhancing the quality and impact of our products.",
+      "date": "2025-07",
+      "icon": "trophy",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772639896284_Aug2025.jpg",
+      "id": "1a1fd436-4918-4763-a9e4-212d8176aae1"
+    },
+    {
+      "title": "Purple Pass",
+      "description": "A recognition of exceptional performance, dedication, and contribution to our collective success! ",
+      "date": "2025-10",
+      "icon": "star",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772640014202_Oct2025.jpg",
+      "id": "9c868edf-4a73-49e3-b1d6-0e6b5d50cfc2"
+    },
+    {
+      "title": "EXTRA MILE AWARD",
+      "description": "In recognition of exceptional efforts beyond defined responsibilities, reflecting dedication to Ulipsu's mission and growth.",
+      "date": "2025-11",
+      "icon": "trophy",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772640081450_Nov2025.jpg",
+      "id": "cd1ad4d0-a63f-469c-ae1a-aa5813f9f1e3"
+    },
+    {
+      "title": "EXTRA MILE AWARD",
+      "description": "In recognition of active involvement across multiple initiatives and a proactive approach to resolving school-level issues during development and delivery.",
+      "date": "2025-12",
+      "icon": "star",
+      "category": "Award",
+      "certificateUrl": "/resources/achievement_1772640176285_Dec2025.jpg",
+      "id": "2b3ddc31-51f3-4ff0-8a56-b67788e31c70"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-2",
+      "name": "Payal Priyambada Nayak",
+      "role": "Program Cordinator",
+      "company": "Kidvento",
+      "content": "He brings both technical excellence and creative thinking to every challenge. Highly recommend him for any complex web project automations and Problem solving statements.",
+      "avatar": "https://media.licdn.com/dms/image/v2/D4D03AQHEL3w_W_Cpfw/profile-displayphoto-shrink_200_200/B4DZc.4R7aHkAY-/0/1749106633294?e=1774483200&v=beta&t=Hc1DY4kTKhtX6y3dTkgElSaYmfGzGBE_MSNWtW0zmdg",
+      "rating": 5,
+      "linkedinUrl": "https://www.linkedin.com/in/payalnayak0703"
+    }
+  ],
+  "resumeUrl": "/resources/resume_1772626520561_Dinesh_Kumar_S_M_Resume.pdf"
+}
