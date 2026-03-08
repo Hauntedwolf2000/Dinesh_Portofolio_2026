@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FiPlay } from "react-icons/fi";
 import CRUDManager from "./CRUDManager";
 import FileUpload from "@/components/ui/FileUpload";
-import toast from "react-hot-toast";
 import type {
   Project,
   Skill,
@@ -194,9 +193,10 @@ export function ProjectsManager({
                 alt={p.title}
                 className="w-full h-full object-cover"
               />
-            ) : p.videoUrl && /youtube\.com|youtu\.be/.test(p.videoUrl) ? (
+            ) : p.videoUrl &&
+              /youtube\.com|youtu\.be/.test(p.videoUrl as string) ? (
               (() => {
-                const yt = p.videoUrl.match(
+                const yt = (p.videoUrl as string).match(
                   /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
                 );
                 return yt ? (
@@ -215,7 +215,7 @@ export function ProjectsManager({
                 </span>
               </div>
             )}
-            {p.videoUrl && (
+            {(p.videoUrl as string) && (
               <span
                 className="absolute bottom-2 left-2 flex items-center gap-1 text-[10px] font-semibold
                 text-violet-300 bg-black/60 px-2 py-0.5 rounded-full backdrop-blur-sm"
