@@ -68,7 +68,7 @@ function VideoModal({
   onClose: () => void;
 }) {
   if (!project.videoUrl) return null;
-  const embed = toEmbedUrl(project.videoUrl);
+  const embed = toEmbedUrl(project.videoUrl as string);
 
   return (
     <motion.div
@@ -251,7 +251,7 @@ export default function Projects({ projects }: Props) {
             {filtered.map((project, i) => {
               const hasVideo = Boolean(project.videoUrl);
               const vidThumb = hasVideo
-                ? getThumbnail(project.videoUrl!)
+                ? getThumbnail(project.videoUrl as string)
                 : null;
               const thumbToShow = project.image || vidThumb;
 
