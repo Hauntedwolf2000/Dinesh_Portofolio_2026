@@ -13,7 +13,7 @@ export async function sendOTPEmail(to: string, otp: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${name} <onboarding@resend.dev>`,
+      from: `${name} <hauntedwolf2000@gmail.com>`,
       to: [to],
       subject: "🔐 Your Admin Login OTP",
       html: `
