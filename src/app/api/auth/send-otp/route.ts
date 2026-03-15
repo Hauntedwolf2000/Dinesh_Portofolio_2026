@@ -4,7 +4,6 @@ import { sendOTPEmail } from "@/lib/mailer";
 import { rateLimit } from "@/lib/rateLimit";
 
 export async function POST(req: NextRequest) {
-  // Rate limit: 5 OTP requests per IP per 15 minutes
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
   const { allowed, resetIn } = rateLimit(`otp:${ip}`, 5, 15 * 60 * 1000);
@@ -32,7 +31,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Always return same message — prevents email enumeration
     if (!isAdminEmail(email)) {
       return NextResponse.json({
         message: "If that email is registered, an OTP was sent.",
@@ -42,13 +40,15 @@ export async function POST(req: NextRequest) {
     const otp = generateOTP();
     storeOTP(email, otp);
     await sendOTPEmail(email, otp);
-
+    console.log("[send-otp] email sent successfully to", email);
     return NextResponse.json({
       message: "If that email is registered, an OTP was sent.",
     });
   } catch (err) {
-    // Never leak error details to client
-    console.error("[send-otp] error occurred");
-    return NextResponse.json({ error: "Request failed" }, { status: 500 });
+    console.error(
+      "[send-otp] FAILED:",
+      err instanceof Error ? err.message : String(err),
+    );
+    return NextResponse.json({ error: "Failed to send OTP." }, { status: 500 });
   }
 }
