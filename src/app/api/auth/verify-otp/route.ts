@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
       secure: process.env.NODE_ENV === "production",
       sameSite: "strict", // upgraded from lax to strict
       maxAge: 60 * 60 * 8, // 8 hours (was 7 days — shorter is safer)
-      path: "/admin", // scoped to /admin only
+      path: "/",
     });
     return res;
   } catch {
