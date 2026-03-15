@@ -13,7 +13,7 @@ export async function sendOTPEmail(to: string, otp: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${name} <hauntedwolf2000@gmail.com>`,
+      from: `${name} <onboarding@resend.dev>`,
       to: [to],
       subject: "🔐 Your Admin Login OTP",
       html: `
@@ -76,7 +76,7 @@ export async function sendContactEmail(opts: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${fromName} <hauntedwolf2000@gmail.com>`,
+      from: `${fromName} <onboarding@resend.dev>`,
       to: [ownerEmail],
       reply_to: opts.email,
       subject: `📩 New message from ${safeName}${safeSubject ? ` — ${safeSubject}` : ""}`,
@@ -123,7 +123,7 @@ export async function sendContactEmail(opts: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${ownerName} <hauntedwolf2000@gmail.com>`,
+      from: `${ownerName} <onboarding@resend.dev>`,
       to: [opts.email],
       subject: `Thanks for reaching out, ${safeName}! 👋`,
       html: `
