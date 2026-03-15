@@ -76,7 +76,7 @@ export async function sendContactEmail(opts: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${fromName} <onboarding@resend.dev>`,
+      from: `${fromName} <hauntedwolf2000@gmail.com>`,
       to: [ownerEmail],
       reply_to: opts.email,
       subject: `📩 New message from ${safeName}${safeSubject ? ` — ${safeSubject}` : ""}`,
@@ -123,7 +123,7 @@ export async function sendContactEmail(opts: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${ownerName} <onboarding@resend.dev>`,
+      from: `${ownerName} <hauntedwolf2000@gmail.com>`,
       to: [opts.email],
       subject: `Thanks for reaching out, ${safeName}! 👋`,
       html: `
